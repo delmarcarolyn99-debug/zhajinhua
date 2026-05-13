@@ -11,6 +11,13 @@ const int COMPARE_COST = 20;      // 比牌费用
 const int CARDS_PER_PLAYER = 3;   // 每个玩家的手牌数
 const int DEFAULT_PLAYERS = 3;    // 默认玩家数
 
+// 房间状态枚举
+enum class RoomStatus {
+    WAITING,    // 等待玩家加入
+    PLAYING,    // 游戏中
+    FINISHED    // 已结束
+};
+
 
 enum class HandType {
 	HIGH_CARD = 1,

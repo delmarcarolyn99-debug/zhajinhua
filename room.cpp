@@ -3,7 +3,7 @@
 #include<algorithm>
 #include<random>
 #include<chrono>
-Room::Room() {}
+Room::Room() : pot(0), currentPlayerIndex(0), isGameOver(false) {}
 void Room::addPlayer(Player p) {
 	players.push_back(p);
 	// 更新玩家映射
